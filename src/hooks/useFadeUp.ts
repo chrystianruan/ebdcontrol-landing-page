@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
 
-export function useFadeUp(): React.RefObject<HTMLDivElement> {
-  const ref = useRef<HTMLDivElement>(null);
+export function useFadeUp(): React.RefObject<HTMLDivElement | null> {
+  const ref = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const el = ref.current;
