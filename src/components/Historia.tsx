@@ -12,7 +12,7 @@ const timelineItems: TimelineItem[] = [
   { year: "Hoje", text: "Desenvolvimento contínuo, novas funcionalidades e aprimoramentos para atender cada vez mais igrejas com excelência." },
 ];
 
-export function Historia(): JSX.Element {
+export function Historia(): React.JSX.Element {
   const ref1 = useFadeUp();
   const ref2 = useFadeUp();
 

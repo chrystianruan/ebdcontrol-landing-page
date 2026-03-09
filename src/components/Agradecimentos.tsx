@@ -10,7 +10,7 @@ const agradecimentos: AgradecimentoItem[] = [
   { icon: "🤝", title: "Colaboradores", desc: "Aos irmãos em Cristo que colaboraram e apoiaram este projeto. Por ordem cronológica: Abner Irineu, Ev. Assis Irineu, Simon Costa, Pb. Domingos José, Pr. Elinaldo Renovato, Hartur, Pr. Abdênego Xavier e Pr. Kleber Maia." },
 ];
 
-function AgradecimentoCard({ item, delay }: { item: AgradecimentoItem; delay: number }): JSX.Element {
+function AgradecimentoCard({ item, delay }: { item: AgradecimentoItem; delay: number }): React.JSX.Element {
   const ref = useFadeUp();
   return (
     <div className="agradec-card fade-up" ref={ref} style={{ transitionDelay: `${delay}s` }}>
@@ -21,7 +21,7 @@ function AgradecimentoCard({ item, delay }: { item: AgradecimentoItem; delay: nu
   );
 }
 
-export function Agradecimentos(): JSX.Element {
+export function Agradecimentos(): React.JSX.Element {
   const ref = useFadeUp();
   return (
     <>

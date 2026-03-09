@@ -10,7 +10,7 @@ const contacts: ContactItem[] = [
   { icon: "💬", label: "WhatsApp", value: "(84) 98120-3938", href: "https://api.whatsapp.com/send?phone=5584981203938", color: "#128C7E", bg: "rgba(18,140,126,0.08)" },
 ];
 
-export function Contato(): JSX.Element {
+export function Contato(): React.JSX.Element {
   const ref = useFadeUp();
   return (
     <>

@@ -8,7 +8,9 @@ import { Agradecimentos } from "./components/Agradecimentos";
 import { Contato } from "./components/Contato";
 import { Footer } from "./components/Footer";
 
-export default function App(): JSX.Element {
+import React from "react";
+
+export default function App(): React.JSX.Element {
   return (
     <div style={{ width: "100%", minHeight: "100vh" }}>
       <GlobalStyles />

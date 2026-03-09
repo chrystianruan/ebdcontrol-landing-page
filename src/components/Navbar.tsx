@@ -10,7 +10,7 @@ const links: NavLink[] = [
   { label: "Contato", href: "#contato" },
 ];
 
-export function Navbar(): JSX.Element {
+export function Navbar(): React.JSX.Element {
   const [scrolled, setScrolled] = useState<boolean>(false);
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 

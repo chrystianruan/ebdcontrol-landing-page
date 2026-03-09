@@ -9,7 +9,7 @@ const stats: HeroStat[] = [
   { value: "∞", label: "Dedicação à obra" },
 ];
 
-export function Hero(): JSX.Element {
+export function Hero(): React.JSX.Element {
   return (
     <>
       <style>{`

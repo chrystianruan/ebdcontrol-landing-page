@@ -1,6 +1,6 @@
 import { SectionProps } from "../../types";
 
-export function Section({ id, children, style = {} }: SectionProps): JSX.Element {
+export function Section({ id, children, style = {} }: SectionProps): React.JSX.Element {
   return (
     <section
       id={id}

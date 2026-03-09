@@ -11,7 +11,7 @@ const manualRoles: ManualRole[] = [
   { label: "Master", icon: "👑", desc: "Controle avançado de configurações, usuários e dados globais do sistema." },
 ];
 
-function ManualCard({ role, delay }: { role: ManualRole; delay: number }): JSX.Element {
+function ManualCard({ role, delay }: { role: ManualRole; delay: number }): React.JSX.Element {
   const ref = useFadeUp();
   return (
     <div className="tutorial-card fade-up" ref={ref} style={{ transitionDelay: `${delay}s` }}>
@@ -23,7 +23,7 @@ function ManualCard({ role, delay }: { role: ManualRole; delay: number }): JSX.E
   );
 }
 
-export function Manuais(): JSX.Element {
+export function Manuais(): React.JSX.Element {
   const ref = useFadeUp();
   return (
     <>

@@ -13,7 +13,7 @@ const features: FeatureItem[] = [
   { icon: "📄", title: "Chamada Física em PDF", desc: "Geração de listas físicas em PDF para situações onde o acesso digital não está disponível." },
 ];
 
-function FeatureCard({ feature, delay }: { feature: FeatureItem; delay: number }): JSX.Element {
+function FeatureCard({ feature, delay }: { feature: FeatureItem; delay: number }): React.JSX.Element {
   const ref = useFadeUp();
   return (
     <div className="feature-card fade-up" ref={ref} style={{ transitionDelay: `${delay}s` }}>
@@ -24,7 +24,7 @@ function FeatureCard({ feature, delay }: { feature: FeatureItem; delay: number }
   );
 }
 
-export function Features(): JSX.Element {
+export function Features(): React.JSX.Element {
   const ref = useFadeUp();
   return (
     <>

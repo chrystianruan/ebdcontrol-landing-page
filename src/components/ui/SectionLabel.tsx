@@ -1,6 +1,6 @@
 import { SectionLabelProps } from "../../types";
 
-export function SectionLabel({ children }: SectionLabelProps): JSX.Element {
+export function SectionLabel({ children }: SectionLabelProps): React.JSX.Element {
   return (
     <div
       style={{
