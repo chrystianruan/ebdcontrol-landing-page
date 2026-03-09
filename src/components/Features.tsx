@@ -1,4 +1,4 @@
-import { FeatureItem } from "../types";
+import type { FeatureItem } from "../types";
 import { useFadeUp } from "../hooks/useFadeUp";
 import { Section } from "./ui/Section";
 import { SectionLabel } from "./ui/SectionLabel";

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { NavLink } from "../types";
+import type { NavLink } from "../types";
 
 const links: NavLink[] = [
   { label: "Início", href: "#hero" },

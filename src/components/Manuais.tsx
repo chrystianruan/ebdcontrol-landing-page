@@ -1,4 +1,4 @@
-import { ManualRole } from "../types";
+import type { ManualRole } from "../types";
 import { useFadeUp } from "../hooks/useFadeUp";
 import { Section } from "./ui/Section";
 import { SectionLabel } from "./ui/SectionLabel";

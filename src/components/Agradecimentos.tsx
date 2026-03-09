@@ -1,4 +1,4 @@
-import { AgradecimentoItem } from "../types";
+import type { AgradecimentoItem } from "../types";
 import { useFadeUp } from "../hooks/useFadeUp";
 import { Section } from "./ui/Section";
 import { SectionLabel } from "./ui/SectionLabel";

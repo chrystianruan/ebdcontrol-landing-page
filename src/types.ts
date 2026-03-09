@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 
 export interface FeatureItem {
   icon: string;
@@ -26,7 +26,7 @@ export interface ContactItem {
   bg: string;
 }
 
-export interface TutorialRole {
+export interface ManualRole {
   label: string;
   icon: string;
   desc: string;

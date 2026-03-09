@@ -1,4 +1,4 @@
-import { ContactItem } from "../types";
+import type { ContactItem } from "../types";
 import { useFadeUp } from "../hooks/useFadeUp";
 import { Section } from "./ui/Section";
 import { SectionLabel } from "./ui/SectionLabel";

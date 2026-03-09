@@ -1,4 +1,4 @@
-import { TimelineItem } from "../types";
+import type { TimelineItem } from "../types";
 import { useFadeUp } from "../hooks/useFadeUp";
 import { Section } from "./ui/Section";
 import { SectionLabel } from "./ui/SectionLabel";

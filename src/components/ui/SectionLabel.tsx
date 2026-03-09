@@ -1,4 +1,4 @@
-import { SectionLabelProps } from "../../types";
+import type { SectionLabelProps } from "../../types";
 
 export function SectionLabel({ children }: SectionLabelProps): React.JSX.Element {
   return (

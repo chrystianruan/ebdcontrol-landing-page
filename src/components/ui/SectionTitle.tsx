@@ -1,4 +1,4 @@
-import { SectionTitleProps } from "../../types";
+import type { SectionTitleProps } from "../../types";
 
 export function SectionTitle({ children, center = false }: SectionTitleProps): React.JSX.Element {
   return (
