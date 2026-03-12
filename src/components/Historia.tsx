@@ -69,7 +69,7 @@ export function Historia(): React.JSX.Element {
                 para outras congregações, e hoje é utilizado por algumas igrejas do campo de Parnamirim.
               </p>
               <div className="historia-quote">
-                <p>"Nosso propósito sempre foi e sempre será servir com dedicação e qualidade!"</p>
+                <p>"Nosso propósito sempre será servir com dedicação e excelência!"</p>
                 <cite>— Equipe EBDControl</cite>
               </div>
             </div>

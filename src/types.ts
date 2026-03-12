@@ -11,12 +11,6 @@ export interface TimelineItem {
   text: string;
 }
 
-export interface AgradecimentoItem {
-  icon: string;
-  title: string;
-  desc: string;
-}
-
 export interface ContactItem {
   icon: string;
   label: string;

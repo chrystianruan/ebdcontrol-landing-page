@@ -4,9 +4,7 @@ interface HeroStat {
 }
 
 const stats: HeroStat[] = [
-  { value: "2023", label: "Em produção desde" },
-  { value: "100%", label: "Gratuito para igrejas" },
-  { value: "∞", label: "Dedicação à obra" },
+  { value: "100%", label: "Gratuito para congregações do campo Parnamirim" },
 ];
 
 export function Hero(): React.JSX.Element {

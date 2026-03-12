@@ -25,7 +25,7 @@ export function Footer(): React.JSX.Element {
              <img src="/img/logo_ebd_extend.png" alt="EBDControl" style={{ height: 40, display: "block" }} />
           </div>
           <div className="footer-copy">
-            © {new Date().getFullYear()} EBDControl — Feito com dedicação e excelência para a obra de Deus
+            EBDControl © {new Date().getFullYear()}  — Feito com dedicação e excelência para a obra de Deus
           </div>
           <div className="footer-links">
             <a href="#hero">Início</a>

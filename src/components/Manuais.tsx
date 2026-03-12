@@ -65,7 +65,7 @@ export function Manuais(): React.JSX.Element {
       <div style={{ borderTop: "1px solid var(--border)", paddingTop: "6rem" }}>
         <Section id="tutoriais">
           <div className="fade-up" ref={ref}>
-            <SectionLabel>Tutoriais</SectionLabel>
+            <SectionLabel>Manuais</SectionLabel>
             <div style={{ display: "flex", alignItems: "center", gap: "1rem", flexWrap: "wrap", marginBottom: "0.5rem" }}>
               <SectionTitle>Aprenda a usar<br />o EBDControl</SectionTitle>
               <span style={{
@@ -80,7 +80,7 @@ export function Manuais(): React.JSX.Element {
               </span>
             </div>
             <p style={{ fontSize: "0.9rem", color: "var(--text-muted)", lineHeight: 1.75, fontWeight: 300, maxWidth: 540 }}>
-              Os tutoriais serão organizados por nível de permissão, cobrindo todas
+              Os manuais serão organizados por nível de permissão, cobrindo todas
               as funcionalidades disponíveis para cada perfil de usuário.
             </p>
           </div>
@@ -94,8 +94,9 @@ export function Manuais(): React.JSX.Element {
           <div className="wip-banner">
             <span className="wip-banner-icon">🛠️</span>
             <div className="wip-banner-text">
-              <strong>Os tutoriais ainda estão sendo preparados.</strong> Em breve esta seção
-              estará completa com vídeos, passo a passos e guias ilustrados para cada nível de acesso.
+              <strong>Os manuais ainda estão sendo preparados.</strong> Em breve, bastará clicar
+              em qualquer nível de acesso e você terá acesso a um PDF com um guia completo para dominar 
+              cada funcionalidade do EBDControl!
             </div>
           </div>
         </Section>

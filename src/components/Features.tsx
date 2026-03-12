@@ -9,7 +9,7 @@ const features: FeatureItem[] = [
   { icon: "👥", title: "Controle de Pessoas", desc: "Gestão completa de alunos, professores e secretários, com cadastro detalhado e histórico individual." },
   { icon: "📊", title: "Relatórios Automáticos", desc: "Geração automática de relatórios com métricas de presença, visitantes, comparativos e muito mais — baseado nas chamadas registradas." },
   { icon: "🔒", title: "Controle de Acesso", desc: "Divisão por níveis de permissão (Comum, Admin, Master, SuperMaster) para garantir segurança e controle de acesso." },
-  { icon: "👁️", title: "Transparência de Presenças", desc: "Visibilidade total sobre frequências, permitindo que líderes acompanhem o engajamento de cada classe em tempo real." },
+  { icon: "👁️", title: "Transparência de Presenças", desc: "Visibilidade total sobre frequências, permitindo que líderes acompanhem o engajamento de cada classe de forma robusta." },
   { icon: "📄", title: "Chamada Física em PDF", desc: "Geração de listas físicas em PDF para situações onde o acesso digital não está disponível." },
 ];
 

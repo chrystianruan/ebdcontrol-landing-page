@@ -4,7 +4,6 @@ import { Hero } from "./components/Hero";
 import { Features } from "./components/Features";
 import { Historia } from "./components/Historia";
 import { Manuais } from "./components/Manuais";
-import { Agradecimentos } from "./components/Agradecimentos";
 import { Contato } from "./components/Contato";
 import { Footer } from "./components/Footer";
 
@@ -19,7 +18,6 @@ export default function App(): React.JSX.Element {
       <Features />
       <Historia />
       <Manuais />
-      <Agradecimentos />
       <Contato />
       <Footer />
     </div>
