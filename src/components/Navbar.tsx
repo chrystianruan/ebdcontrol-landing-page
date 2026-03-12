@@ -5,7 +5,7 @@ const links: NavLink[] = [
   { label: "Início", href: "#hero" },
   { label: "Funcionalidades", href: "#features" },
   { label: "História", href: "#historia" },
-  { label: "Tutoriais", href: "#tutoriais" },
+  { label: "Manuais", href: "#manuais" },
   { label: "Contato", href: "#contato" },
 ];
 

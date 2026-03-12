@@ -63,7 +63,7 @@ export function Manuais(): React.JSX.Element {
       `}</style>
 
       <div style={{ borderTop: "1px solid var(--border)", paddingTop: "6rem" }}>
-        <Section id="tutoriais">
+        <Section id="manuais">
           <div className="fade-up" ref={ref}>
             <SectionLabel>Manuais</SectionLabel>
             <div style={{ display: "flex", alignItems: "center", gap: "1rem", flexWrap: "wrap", marginBottom: "0.5rem" }}>
