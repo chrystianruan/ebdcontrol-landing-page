@@ -24,6 +24,7 @@ export interface ManualRole {
   label: string;
   icon: string;
   desc: string;
+  pdfUrl?: string;
 }
 
 export interface NavLink {

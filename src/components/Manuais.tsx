@@ -7,18 +7,39 @@ import { SectionTitle } from "./ui/SectionTitle";
 const manualRoles: ManualRole[] = [
   { label: "Comum", icon: "👤", desc: "Para membros que acessam sua área pessoal e realizam chamadas individuais." },
   { label: "Classe", icon: "🏫", desc: "Para professores e secretários de classe que gerenciam presença e alunos." },
-  { label: "Admin", icon: "🛡️", desc: "Para administradores da congregação com acesso a relatórios e gestão geral." },
-  { label: "Master", icon: "👑", desc: "Controle avançado de configurações, usuários e dados globais do sistema." },
+  { label: "Admin", icon: "🛡️", desc: "Para administradores da congregação com acesso a relatórios e gestão geral.", pdfUrl: "/manuais/manual_admin_ebdcontrol.pdf" },
+  { label: "Master", icon: "👑", desc: "Controle avançado de configurações, usuários e dados globais do sistema."},
 ];
 
 function ManualCard({ role, delay }: { role: ManualRole; delay: number }): React.JSX.Element {
   const ref = useFadeUp();
+  const haspdf = !!role.pdfUrl;
+
   return (
-    <div className="tutorial-card fade-up" ref={ref} style={{ transitionDelay: `${delay}s` }}>
-      <div className="wip-ribbon">Em breve</div>
+    <div
+      className={`tutorial-card fade-up${haspdf ? ' tutorial-card-available' : ''}`}
+      ref={ref}
+      style={{ transitionDelay: `${delay}s` }}
+    >
+      {haspdf ? (
+        <div className="available-ribbon">Disponível</div>
+      ) : (
+        <div className="wip-ribbon">Em breve</div>
+      )}
+
       <span className="tutorial-icon">{role.icon}</span>
       <div className="tutorial-title">Área {role.label}</div>
       <div className="tutorial-desc">{role.desc}</div>
+
+      {haspdf && (
+        <a
+          href={role.pdfUrl}
+          download
+          className="tutorial-download-btn"
+        >
+          <span>📄</span> Baixar manual
+        </a>
+      )}
     </div>
   );
 }
@@ -60,6 +81,40 @@ export function Manuais(): React.JSX.Element {
         .wip-banner-icon { font-size: 1.5rem; flex-shrink: 0; }
         .wip-banner-text { font-size: 0.84rem; color: #7a5c10; line-height: 1.6; }
         .wip-banner-text strong { font-weight: 600; }
+        
+        .tutorial-card-available {
+          border-color: var(--purple-mid);
+          border-style: solid;
+          background: linear-gradient(135deg, var(--surface), rgba(123,78,165,0.03));
+        }
+
+        .available-ribbon {
+          position: absolute; top: 14px; right: -24px;
+          background: var(--purple); color: white;
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 0.6rem; font-weight: 600; letter-spacing: 0.08em;
+          padding: 3px 32px; transform: rotate(35deg); text-transform: uppercase;
+        }
+
+        .tutorial-download-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.4rem;
+          margin-top: 1rem;
+          padding: 0.5rem 1rem;
+          background: var(--purple);
+          color: white;
+          border-radius: 0.5rem;
+          font-size: 0.8rem;
+          font-weight: 600;
+          text-decoration: none;
+          transition: background 0.2s, transform 0.15s;
+        }
+
+        .tutorial-download-btn:hover {
+          background: #6a3d93;
+          transform: translateY(-1px);
+        }
       `}</style>
 
       <div style={{ borderTop: "1px solid var(--border)", paddingTop: "6rem" }}>
